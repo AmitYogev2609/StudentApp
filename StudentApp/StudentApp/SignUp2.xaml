@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentApp.SignUp2">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Class:"/>
+                <Picker x:Name="grade" SelectedIndexChanged="grade_SelectedIndexChanged" Title="{Binding Class}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Class number:"/>
+                <Entry x:Name="num" Placeholder = "Plece enter your grade number" Text="{Binding ClassNumber}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Like computer since:"/>
+                <Switch IsToggled="{Binding LikeCS}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Like Math:"/>
+                <Switch IsToggled="{Binding LikeMath}"/>
+            </StackLayout>
+           
+            <Button Text="Summary" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

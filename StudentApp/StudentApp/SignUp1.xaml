@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentApp.SignUp1">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Name:"/>
+                <Entry Text="{Binding Name}" Placeholder="enter your name" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Addres:"/>
+                <Entry Text="{Binding Address}" Placeholder="enter your Addres" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Birthdate:"/>
+                <DatePicker x:Name="date" Date="{Binding BirthDate}" />
+            </StackLayout>
+           
+            <Button Text="next page" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
