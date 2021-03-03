@@ -20,7 +20,6 @@
                 <Label Text="Like Math:"/>
                 <Switch IsToggled="{Binding LikeMath}"/>
             </StackLayout>
-           
             <Button Text="Summary" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
