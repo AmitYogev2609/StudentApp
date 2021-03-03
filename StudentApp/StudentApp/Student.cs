@@ -72,12 +72,10 @@ namespace StudentApp
             {
                 LikeMath = false;
                 LikeCS = false;
-                BirthDate = new DateTime(2004, 1, 1);
+                BirthDate = DateTime.Now;
                 Name = null;
                 Address = null;
                 Class = "select garde";
-            
-
             }
 
         public event PropertyChangedEventHandler PropertyChanged;
